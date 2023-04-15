@@ -28,8 +28,8 @@ class CorsWorkAround(Resource):
     resRaw = r.request("POST", args["url"], headers=h, data=j.dumps(args["data"]))
     resJson = resRaw.json()
 
-    print("*", args["data"])
-    print("*", args["url"])
+    #print("*", args["data"])
+    #print("*", args["url"])
 
     return {"reqbody":
             {"url": args["url"], 
